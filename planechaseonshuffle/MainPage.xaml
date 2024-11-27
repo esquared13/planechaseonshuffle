@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="planechaseonshuffle.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            <!-- modify this to display the current image -->
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="ShuffleBtn"
+                Text="Shuffle Cards"
+                SemanticProperties.Hint="Shuffles the order of how the cards appear in the deck"
+                HorizontalOptions="Fill" />  <!-- this just makes the button fill the window i think/-->
+                <!-- need to add event handler for when clicked to a method that shuffles the order of cards in the dataset-->
+            <Button
+                x:Name="NextBtn"
+                Text="Next Card" 
+                SemanticProperties.Hint="Moves to the next card in the deck"
+                HorizontalOptions="Fill" />
+                <!-- may want this to be an image of an arrow or something.  may also want to add more buttons to cycle backwards through the deck as well-->
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
