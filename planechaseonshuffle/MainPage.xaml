@@ -43,6 +43,9 @@
                 SemanticProperties.Hint="Moves to the next card in the deck"
                 HorizontalOptions="Fill" />
                 <!-- may want this to be an image of an arrow or something.  may also want to add more buttons to cycle backwards through the deck as well-->
+                <!-- need to add 4 sets of plus and minus button counters
+                     need to add a label or some other kind of thing to keep track of the lifecount 
+                     need to add something for commander damage, not sure what -->
         </VerticalStackLayout>
     </ScrollView>
 
